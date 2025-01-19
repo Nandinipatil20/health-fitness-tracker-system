@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Health and Fitness Tracker</h1>
+        </header>
+        <main>
+            <section class="input-section">
+                <h2>Daily Tracker</h2>
+                <form id="tracker-form">
+                    <label for="activity">Activity (e.g., Running, Yoga):</label>
+                    <input type="text" id="activity" required>
+                    <label for="duration">Duration (minutes):</label>
+                    <input type="number" id="duration" required>
+                    <label for="water">Water Intake (liters):</label>
+                    <input type="number" id="water" step="0.1" required>
+                    <button type="submit">Add Entry</button>
+                </form>
+            </section>
+            <section class="summary-section">
+                <h2>Summary</h2>
+                <div id="summary">
+                    <p>Total Activities: <span id="total-activities">0</span></p>
+                    <p>Total Duration: <span id="total-duration">0</span> minutes</p>
+                    <p>Total Water Intake: <span id="total-water">0</span> liters</p>
+                </div>
+            </section>
+            <section class="entries-section">
+                <h2>Entries</h2>
+                <ul id="entries"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
